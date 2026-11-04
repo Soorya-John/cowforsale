@@ -20,3 +20,18 @@ html,body{overflow-x:clip}
 .evidence-card:last-child img{object-fit:contain;background:#e8e9dc;image-rendering:auto}
 @media(max-width:650px){.evidence-grid{row-gap:55px}}
 .footer-credit{text-align:center;font-size:10px;letter-spacing:.06em;color:#73796b;padding:0 20px 22px;margin:0}.evidence-card:last-child img{padding:25px}
+
+/* A tiny romantic detour, parked clear of the main controls. */
+.assam-sticker{position:fixed;right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));z-index:35;width:94px;padding:6px 8px 4px;border:1px solid #adb59d;border-radius:10px;background:#fffaf0eb;color:var(--green);cursor:pointer;transform:rotate(-5deg);box-shadow:2px 3px 0 #23281f20;transition:background .2s,transform .2s}
+.assam-sticker img{width:76px;height:56px;object-fit:contain;pointer-events:none}
+.assam-sticker span{display:block;font-family:var(--hand);font-size:13px;line-height:1.1}
+.assam-sticker:hover,.assam-sticker.is-near{background:#f8dce3;transform:rotate(3deg)}
+#cow-follower::after{content:'♡ ♡';position:absolute;right:-16px;top:-13px;font-size:19px;color:#d95078;opacity:0;transform:rotate(12deg);transition:opacity .2s}
+#cow-follower.is-blushing::after{opacity:1}
+#cow-follower.is-blushing #cow-bubble{left:auto;right:0}
+#cow-follower.is-blushing::after{right:0}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.map-credit{text-align:center;font-size:8px;color:#73796b;padding:0 110px 9px;margin:0}.map-credit a{text-underline-offset:2px}
+footer{padding-right:125px}
+@media(max-width:650px){.assam-sticker{width:70px;padding:4px 6px}.assam-sticker img{width:56px;height:42px}.assam-sticker span{font-size:11px}.map-credit{padding-left:20px;padding-right:90px}.footer-credit{padding-right:85px}}
+@media(prefers-reduced-motion:reduce){#cow-follower.is-blushing{display:block}}

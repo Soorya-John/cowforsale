@@ -32,7 +32,7 @@ async function start() {
     placeholder.setAttribute('aria-label', img.alt + ' — photo to be added');
     placeholder.textContent = '🐄 PHOTO PENDING. CHAOS CONFIRMED.'; img.replaceWith(placeholder);
   }, {once:true}));
-  setupReveals(); setupCow(c.cowBubbles);
+  setupReveals(); setupCow(c.cowBubbles, c.assamBubble, c.assamReaction);
 }
 function setupReveals() {
   if (reduceMotion.matches || !('IntersectionObserver' in window)) return;
@@ -42,13 +42,53 @@ function setupReveals() {
   }), {threshold: .13});
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }
-function setupCow(bubbles) {
+function setupCow(bubbles, assamBubble, assamReaction) {
   const cow = $('#cow-follower'), bubble = $('#cow-bubble');
+  const sticker = $('#assam-sticker'), cowImage = cow.querySelector('img');
+  const reaction = $('#assam-reaction');
   const touch = matchMedia('(pointer: coarse)');
   let x = innerWidth - 85, y = innerHeight - 75, targetX = x, targetY = y, frame, last = 0, speechAt = 0, count = 0;
   let active = false;
-  const showBubble = () => {bubble.textContent = bubbles[count++ % bubbles.length];bubble.classList.add('show');setTimeout(()=>bubble.classList.remove('show'),2000);};
-  function move(event) {if (touch.matches) {targetX = Math.min(innerWidth-65, Math.max(20,event.clientX));showBubble();} else {targetX=event.clientX+25;targetY=event.clientY+25;} active=true;}
+  let nearAssam = false, focusedAssam = false, tappedAssam = false, blushing = false;
+  let bubbleTimer, blushTimer;
+  const showBubble = () => {if(blushing)return;clearTimeout(bubbleTimer);bubble.textContent = bubbles[count++ % bubbles.length];bubble.classList.add('show');bubbleTimer=setTimeout(()=>bubble.classList.remove('show'),2000);};
+  function updateBlush() {
+    const next = nearAssam || focusedAssam || tappedAssam;
+    if (next === blushing) return;
+    blushing = next;
+    cow.classList.toggle('is-blushing', blushing);
+    sticker.classList.toggle('is-near', blushing);
+    cowImage.src = blushing ? './assets/cow-blush.svg' : './assets/cow.svg';
+    clearTimeout(bubbleTimer);
+    bubble.textContent = blushing ? assamBubble : '';
+    bubble.classList.toggle('show', blushing);
+    reaction.textContent = blushing ? assamReaction : '';
+    if(blushing){
+      active=true;
+      // A stationary reaction remains available for keyboard/reduced-motion users.
+      if(reduceMotion.matches || focusedAssam || touch.matches){
+        const rect=sticker.getBoundingClientRect();
+        x=targetX=Math.max(12,rect.left-70);y=targetY=Math.max(45,rect.bottom-60);
+        cow.style.transform=`translate(${x}px,${y}px)`;
+        cow.style.visibility='visible';
+      }
+    }
+  }
+  function checkProximity(event) {
+    const rect=sticker.getBoundingClientRect();
+    const dx=Math.max(rect.left-event.clientX,0,event.clientX-rect.right);
+    const dy=Math.max(rect.top-event.clientY,0,event.clientY-rect.bottom);
+    nearAssam=Math.hypot(dx,dy)<55;
+    updateBlush();
+  }
+  sticker.addEventListener('focus',()=>{focusedAssam=sticker.matches(':focus-visible');updateBlush();});
+  sticker.addEventListener('blur',()=>{focusedAssam=false;updateBlush();});
+  sticker.addEventListener('click',()=>{
+    tappedAssam=true;updateBlush();clearTimeout(blushTimer);
+    blushTimer=setTimeout(()=>{tappedAssam=false;if(touch.matches){nearAssam=false;focusedAssam=false;}updateBlush();},3200);
+  });
+  document.documentElement.addEventListener('pointerleave',()=>{nearAssam=false;updateBlush();});
+  function move(event) {if (touch.matches) {targetX = Math.min(innerWidth-65, Math.max(20,event.clientX));showBubble();} else {targetX=event.clientX+25;targetY=event.clientY+25;checkProximity(event);} active=true;}
   addEventListener('pointermove', e => {if (!touch.matches) move(e);}, {passive:true});
   addEventListener('pointerdown', move, {passive:true});
   function loop(time) {

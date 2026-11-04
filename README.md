@@ -43,6 +43,10 @@ After future edits, check/build, commit, push and run the workflow again. Relati
 
 ## Interaction and accessibility
 
-The cursor cow uses `pointer-events: none` so buttons and text remain usable. It follows with a delay and waddle on desktop. Touch devices get a cow near the bottom that wanders and responds to taps. Reduced motion disables the cow, scroll animations and falling confetti; the celebration button still displays a message. Keyboard focus styles, native buttons, a skip link, image descriptions and live celebration status are included. Confetti cleans itself up after six seconds. There is no sound.
+The cursor cow uses `pointer-events: none` so buttons and text remain usable. It follows with a delay and waddle on desktop. Move within 55 pixels of the corner Assam sticker to make it blush; moving away restores its usual face. On touch devices, tap the sticker for a brief blush. Keyboard focus also triggers the reaction. The speech and accessible reaction text are editable in `content.json` as `assamBubble` and `assamReaction`.
+
+Reduced motion disables the wandering cow, scroll animations and falling confetti; Assam still triggers a stationary blushing cow beside the sticker, and the celebration button still displays a message. Keyboard focus styles, native buttons, a skip link, image descriptions and live celebration status are included. Confetti cleans itself up after six seconds. There is no sound.
+
+The Assam outline is adapted from SlowPhoton's Wikimedia Commons map under CC BY-SA 3.0; links and adaptation details are in `assets/ATTRIBUTION.md` and the website footer. Its source SVG is kept under `scripts/` and is excluded from the site build.
 
 Photos and source are publicly viewable in a public repository, even before Pages is deployed.
