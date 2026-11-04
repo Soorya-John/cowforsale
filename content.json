@@ -1,0 +1,23 @@
+{
+  "name": "Nandini",
+  "nickname": "Pashu",
+  "opening": "You’re older, and I’m one year closer to world peace.",
+  "intro": "Happy birthday, Pashu. The world got another year of you. I got another year of evidence. Scroll down, you emotionally significant farm animal.",
+  "hero": {"src": "assets/photos/Camera Pashu.webp", "alt": "Nandini holding a small silver camera", "caption": "the moo. the myth. the absolute menace."},
+  "specimen": [{"label": "Common name", "value": "Pashu"}, {"label": "Actual species", "value": "Best friend. Allegedly human."}, {"label": "Threat level", "value": "To my peace? Considerable."}, {"label": "Conservation status", "value": "Irreplaceable. Unfortunately for my ego."}],
+  "evidence": [
+    {"src": "assets/photos/Blue shirt Pashu.webp", "alt": "Nandini in a blue T-shirt looking down", "caption": "Suspiciously innocent. We’re not buying it.", "tag": "EXHIBIT A", "annotation": "looks harmless. classic tactic."},
+    {"src": "assets/photos/Close up Pashu.webp", "alt": "A playful close-up portrait of Nandini from above", "caption": "Personal space has left the chat.", "tag": "EXHIBIT B", "annotation": "enhance. ENHANCE."},
+    {"src": "assets/photos/Camera Pashu.webp", "alt": "Nandini looking through a silver camera", "caption": "The evidence has started collecting evidence.", "tag": "EXHIBIT C", "annotation": "reverse surveillance??"}
+  ],
+  "memories": [
+    {"sample": true, "title": "The incident we still quote.", "text": "[Sample memory — replace me] Add that one stupid thing we did, the line we keep repeating, and why nobody else finds it as funny as we do.", "src": "assets/photos/Together portrait.webp", "alt": "Nandini and her friend sitting together", "caption": "Two people. Zero sensible explanations."},
+    {"sample": true, "title": "A perfectly normal day. Allegedly.", "text": "[Sample memory — replace me] Put our real story here: where we were, what went wrong, and the exact moment the shared brain cell gave up.", "src": "assets/photos/Together smiling.webp", "alt": "Nandini and her friend smiling for a photo", "caption": "Excellent company. Dubious supervision."}
+  ],
+  "crush": "You had an Assamese crush. Your imagination heard that and immediately ordered a full romance arc. Pashu, it was a crush, not a green light for season two. ♡",
+  "letterPhoto": {"src": "assets/photos/Together smiling.webp", "alt": "Nandini and her friend smiling together", "caption": "my favourite person to be ridiculous with. ♡"},
+  "letter": ["Okay, Pashu. Under all this highly professional bullying is a very simple thing: I absolutely adore you.", "You’re my blood sister from another mother. Family, with slightly fewer shared relatives and significantly more opportunities to call you a cow.", "I hope this year is kind to you. I hope you feel loved on the boring days, the messy days, and the days when your brain is just a cow standing in a field, buffering.", "Whatever life does next, you have me. In your corner. On your team. Probably making a very unhelpful joke, but absolutely, completely there."],
+  "signature": "All my love, your permanently assigned idiot. ♡",
+  "birthdayMessage": "Here’s to more life, more laughter, and more reasons for me to say “Pashu, please.” Love you an unreasonable amount.",
+  "cowBubbles": ["come back.", "moo-ve over.", "emotional support cow", "grass?", "i herd that."]
+}
