@@ -1,4 +1,4 @@
-# Happy birth-moo, Pashu 🐄
+# cowforsale 🐄
 
 A birthday scrapbook for Nandini: real photos, affectionate roasting, different scroll reveals, a cursor-chasing cow, touch wandering, reduced-motion support and cow confetti. Plain HTML, CSS and JavaScript; no dependencies or backend.
 
