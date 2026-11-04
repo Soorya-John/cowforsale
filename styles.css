@@ -19,7 +19,7 @@ html,body{overflow-x:clip}
 .evidence-grid{row-gap:65px}
 .evidence-card:last-child img{object-fit:contain;background:#e8e9dc;image-rendering:auto}
 @media(max-width:650px){.evidence-grid{row-gap:55px}}
-.footer-credit{text-align:center;font-size:10px;letter-spacing:.06em;color:#73796b;padding:0 20px 22px;margin:0}.evidence-card:last-child img{padding:25px}
+.footer-credit{text-align:center;font-size:12px;letter-spacing:.06em;color:#73796b;padding:0 20px 22px;margin:0}.evidence-card:last-child img{padding:25px}
 
 /* A tiny romantic detour, parked clear of the main controls. */
 .assam-sticker{position:fixed;right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));z-index:35;width:94px;padding:6px 8px 4px;border:1px solid #adb59d;border-radius:10px;background:#fffaf0eb;color:var(--green);cursor:pointer;transform:rotate(-5deg);box-shadow:2px 3px 0 #23281f20;transition:background .2s,transform .2s}
