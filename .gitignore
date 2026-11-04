@@ -1,3 +1,5 @@
 dist/
 node_modules/
 .DS_Store
+# Contains ID and contact details. Only its cropped portrait is public.
+Screenshot 2026-11-04 234649.png

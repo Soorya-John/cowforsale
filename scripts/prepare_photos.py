@@ -11,6 +11,8 @@ PHOTOS = {
     'Screenshot 2026-11-04 232448.png': ('Close up Pashu.webp', False),
     'Screenshot 2026-11-04 232459.png': ('Together portrait.webp', True),
     'Screenshot 2026-11-04 232526.png': ('Together smiling.webp', False),
+    'Screenshot 2026-11-04 234636.png': ('Lollipop Pashu.webp', False),
+    'Screenshot 2026-11-04 234643.png': ('Filter Pashu.webp', False),
 }
 for original, (name, rotate) in PHOTOS.items():
     with Image.open(ROOT / original) as source:
@@ -20,3 +22,12 @@ for original, (name, rotate) in PHOTOS.items():
         image.thumbnail((1400, 1400))
         image.save(OUT / name, 'WEBP', quality=86, method=6)
         print(f'{name}: {(OUT / name).stat().st_size:,} bytes')
+
+# The ID-card screenshot stays local: publish only the small portrait, never
+# the name, student number, contact details or addresses printed around it.
+id_source = ROOT / 'Screenshot 2026-11-04 234649.png'
+if id_source.exists():
+    with Image.open(id_source) as source:
+        portrait = source.convert('RGB').crop((64, 117, 140, 191))
+        portrait.save(OUT / 'Serious photo Pashu.webp', 'WEBP', quality=90, method=6)
+        print('Serious photo Pashu.webp: portrait only; ID details excluded')

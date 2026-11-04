@@ -3,21 +3,112 @@
   "nickname": "Pashu",
   "opening": "You’re older, and I’m one year closer to world peace.",
   "intro": "Happy birthday, Pashu. The world got another year of you. I got another year of evidence. Scroll down, you emotionally significant farm animal.",
-  "hero": {"src": "assets/photos/Camera Pashu.webp", "alt": "Nandini holding a small silver camera", "caption": "the moo. the myth. the absolute menace."},
-  "specimen": [{"label": "Common name", "value": "Pashu"}, {"label": "Actual species", "value": "Best friend. Allegedly human."}, {"label": "Threat level", "value": "To my peace? Considerable."}, {"label": "Conservation status", "value": "Irreplaceable. Unfortunately for my ego."}],
+  "hero": {
+    "src": "assets/photos/Camera Pashu.webp",
+    "alt": "Nandini holding a small silver camera",
+    "caption": "pashu, behind the scenes."
+  },
+  "specimen": [
+    {
+      "label": "Common name",
+      "value": "Pashu"
+    },
+    {
+      "label": "Actual species",
+      "value": "Best friend. Allegedly human."
+    },
+    {
+      "label": "Threat level",
+      "value": "To my peace? Considerable."
+    },
+    {
+      "label": "Conservation status",
+      "value": "Irreplaceable. Unfortunately for my ego."
+    }
+  ],
   "evidence": [
-    {"src": "assets/photos/Blue shirt Pashu.webp", "alt": "Nandini in a blue T-shirt looking down", "caption": "Suspiciously innocent. We’re not buying it.", "tag": "EXHIBIT A", "annotation": "looks harmless. classic tactic."},
-    {"src": "assets/photos/Close up Pashu.webp", "alt": "A playful close-up portrait of Nandini from above", "caption": "Personal space has left the chat.", "tag": "EXHIBIT B", "annotation": "enhance. ENHANCE."},
-    {"src": "assets/photos/Camera Pashu.webp", "alt": "Nandini looking through a silver camera", "caption": "The evidence has started collecting evidence.", "tag": "EXHIBIT C", "annotation": "reverse surveillance??"}
+    {
+      "src": "assets/photos/Blue shirt Pashu.webp",
+      "alt": "Nandini in a blue T-shirt looking down",
+      "caption": "A rare quiet moment.",
+      "tag": "EXHIBIT A",
+      "annotation": "enjoy it while it lasts."
+    },
+    {
+      "src": "assets/photos/Close up Pashu.webp",
+      "alt": "A playful close-up portrait of Nandini from above",
+      "caption": "0.5x was a choice.",
+      "tag": "EXHIBIT B",
+      "annotation": "a very good choice, actually."
+    },
+    {
+      "src": "assets/photos/Camera Pashu.webp",
+      "alt": "Nandini looking through a silver camera",
+      "caption": "Her turn to collect bad photos.",
+      "tag": "EXHIBIT C",
+      "annotation": "fair enough."
+    },
+    {
+      "src": "assets/photos/Lollipop Pashu.webp",
+      "alt": "Nandini taking a selfie with a green lollipop",
+      "caption": "Busy. Important lollipop business.",
+      "tag": "EXHIBIT D",
+      "annotation": "please hold."
+    },
+    {
+      "src": "assets/photos/Filter Pashu.webp",
+      "alt": "Nandini wearing a playful face filter with horns and bright green eyes",
+      "caption": "Pashu after one minor inconvenience.",
+      "tag": "EXHIBIT E",
+      "annotation": "very subtle filter."
+    },
+    {
+      "src": "assets/photos/Serious photo Pashu.webp",
+      "alt": "A cropped school portrait of Nandini wearing glasses",
+      "caption": "The compulsory serious photo.",
+      "tag": "EXHIBIT F",
+      "annotation": "even pashu had a formal era."
+    }
   ],
   "memories": [
-    {"sample": true, "title": "The incident we still quote.", "text": "[Sample memory — replace me] Add that one stupid thing we did, the line we keep repeating, and why nobody else finds it as funny as we do.", "src": "assets/photos/Together portrait.webp", "alt": "Nandini and her friend sitting together", "caption": "Two people. Zero sensible explanations."},
-    {"sample": true, "title": "A perfectly normal day. Allegedly.", "text": "[Sample memory — replace me] Put our real story here: where we were, what went wrong, and the exact moment the shared brain cell gave up.", "src": "assets/photos/Together smiling.webp", "alt": "Nandini and her friend smiling for a photo", "caption": "Excellent company. Dubious supervision."}
+    {
+      "sample": false,
+      "title": "Hostel drama: the extended cut.",
+      "text": "You used to talk to me for hours about your hostel and friend circle drama. Hours, Pashu. At that point it wasn’t an update, it was an audiobook. With a very large supporting cast.",
+      "src": "assets/photos/Together portrait.webp",
+      "alt": "Nandini and her friend sitting together",
+      "caption": "Me, getting the full version."
+    },
+    {
+      "sample": false,
+      "title": "We meet. A new season drops.",
+      "text": "Every time we meet, there’s another season of lore. New developments, returning characters, and me trying to remember who we were annoyed with last time. No recap skipped. Obviously I’m invested.",
+      "src": "assets/photos/Together smiling.webp",
+      "alt": "Nandini and her friend smiling for a photo",
+      "caption": "Another meeting. Another season."
+    }
   ],
   "crush": "You had an Assamese crush. Your imagination heard that and immediately ordered a full romance arc. Pashu, it was a crush, not a green light for season two. ♡",
-  "letterPhoto": {"src": "assets/photos/Together smiling.webp", "alt": "Nandini and her friend smiling together", "caption": "my favourite person to be ridiculous with. ♡"},
-  "letter": ["Okay, Pashu. Under all this highly professional bullying is a very simple thing: I absolutely adore you.", "You’re my blood sister from another mother. Family, with slightly fewer shared relatives and significantly more opportunities to call you a cow.", "I hope this year is kind to you. I hope you feel loved on the boring days, the messy days, and the days when your brain is just a cow standing in a field, buffering.", "Whatever life does next, you have me. In your corner. On your team. Probably making a very unhelpful joke, but absolutely, completely there."],
+  "letterPhoto": {
+    "src": "assets/photos/Together smiling.webp",
+    "alt": "Nandini and her friend smiling together",
+    "caption": "my sister. unfortunately, also pashu. ♡"
+  },
+  "letter": [
+    "Okay, Pashu. Under all this highly professional bullying is a very simple thing: I absolutely adore you.",
+    "You’re my blood sister from another mother. Family, with slightly fewer shared relatives and significantly more opportunities to call you a cow.",
+    "I hope this year is kind to you. I hope you feel loved on the boring days, the messy days, and the days when your brain is just a cow standing in a field, buffering.",
+    "Whatever life does next, you have me. In your corner. On your team. Probably making a very unhelpful joke, but absolutely, completely there."
+  ],
   "signature": "All my love, your permanently assigned idiot. ♡",
   "birthdayMessage": "Here’s to more life, more laughter, and more reasons for me to say “Pashu, please.” Love you an unreasonable amount.",
-  "cowBubbles": ["come back.", "moo-ve over.", "emotional support cow", "grass?", "i herd that."]
+  "cowBubbles": [
+    "come back.",
+    "moo-ve over.",
+    "emotional support cow",
+    "grass?",
+    "i herd that."
+  ],
+  "memoryIntro": "Hostel drama. Friend circle drama. I don’t live there, but apparently I’m on the recap committee.",
+  "footerCredit": "made with love, Soorya"
 }

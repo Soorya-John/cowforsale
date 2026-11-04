@@ -11,3 +11,12 @@ html,body{overflow-x:clip}
 .photo-placeholder{width:100%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;background:#e3e8d8 url('./assets/cow-print.svg');background-blend-mode:soft-light;font-family:var(--hand);font-size:22px;color:var(--ink)}
 @media(max-width:650px){.hero-art::before{inset:50px 12px 60px 18px}}
 @media(max-width:650px){.birthday h2{font-size:clamp(60px,17vw,76px)}}
+
+/* More camera-roll evidence, keeping the same three-card rhythm per row. */
+.evidence-card:nth-child(3n+1){--tilt:-5deg;--offset:0px}
+.evidence-card:nth-child(3n+2){--tilt:3deg;--offset:65px}
+.evidence-card:nth-child(3n+3){--tilt:-3deg;--offset:15px}
+.evidence-grid{row-gap:65px}
+.evidence-card:last-child img{object-fit:contain;background:#e8e9dc;image-rendering:auto}
+@media(max-width:650px){.evidence-grid{row-gap:55px}}
+.footer-credit{text-align:center;font-size:10px;letter-spacing:.06em;color:#73796b;padding:0 20px 22px;margin:0}.evidence-card:last-child img{padding:25px}

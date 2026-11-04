@@ -12,11 +12,11 @@ Edit **`content.json`** for all photo paths, alt descriptions, captions, memorie
 
 - Put new photos in `assets/photos/`, then update the corresponding `src`, for example `assets/photos/Our silly photo.webp`. Spaces work. Match capitalization exactly and use forward slashes.
 - An empty `src` shows a designed placeholder. Images that fail to load also fall back to placeholders in the browser.
-- Replace the two visibly labelled sample memories with your real stories. Then set their `sample` values to `false` to remove the sample labels.
+- The two memories now use the real hostel-drama and catch-up lore supplied by Soorya. Additional draft memories can use `sample: true` to show a visible placeholder label; switch it to `false` after adding a real story.
 - Personalize `letter`, `signature` and `birthdayMessage`. The requested opening headline is already exact.
 - Section headings and navigation are in `index.html`; the visual design is in `styles.css`.
 
-The five original PNG screenshots remain at the repository root. Optimized WebP copies in `assets/photos/` total about 250 KB; the sideways photo is corrected only in its copy. To regenerate them, install Pillow (`python -m pip install Pillow`) and run `python scripts/prepare_photos.py`. This is optional; optimized copies are included. Export new photos as WebP where possible, ideally under 300 KB each.
+Original PNG screenshots remain untouched at the repository root. The eight optimized WebP copies in `assets/photos/` total about 300 KB; the sideways photo is corrected only in its copy. The ID-card screenshot is excluded from Git using `.gitignore`; only its cropped portrait is used on the site. Keep the full card local. To regenerate the copies, install Pillow (`python -m pip install Pillow`) and run `python scripts/prepare_photos.py`. The ID crop is optional if that local original is absent after cloning. Optimized copies are already included. Export new photos as WebP where possible, ideally under 300 KB each.
 
 Fonts load from Google Fonts with local fallbacks. All other assets come from this site.
 

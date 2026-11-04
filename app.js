@@ -16,12 +16,14 @@ async function start() {
   $('#hero-intro').textContent = c.intro;
   $('#hero-photo').innerHTML = photo(c.hero, true);
   $('#specimen').innerHTML = c.specimen.map(s => `<div><dt>${escape(s.label)}</dt><dd>${escape(s.value)}</dd></div>`).join('');
+  $('#memory-intro').textContent = c.memoryIntro;
   $('#evidence-grid').innerHTML = c.evidence.map(p => `<article class="evidence-card reveal"><figure class="polaroid">${photo(p)}<span class="tag">${escape(p.tag)}</span></figure><span class="annotation">${escape(p.annotation)}</span></article>`).join('');
   $('#memory-list').innerHTML = c.memories.map((m,i) => `<article class="memory-card"><figure class="polaroid reveal">${photo(m)}</figure><span class="sample-label">${m.sample ? 'SAMPLE MEMORY · REPLACE WITH OUR REAL LORE' : 'FROM THE SHARED ARCHIVES'} / ${String(i+1).padStart(2,'0')}</span><h3>${escape(m.title)}</h3><p>${escape(m.text)}</p></article>`).join('');
   $('#crush-copy').textContent = c.crush;
   $('#letter-photo').innerHTML = `<figure class="polaroid">${photo(c.letterPhoto)}</figure>`;
   $('#letter-text').innerHTML = c.letter.map(p => `<p>${escape(p)}</p>`).join('');
   $('#signature').textContent = c.signature;
+  $('#footer-credit').textContent = c.footerCredit;
   $('#birthday-name').textContent = `${c.nickname}!`;
   $('#birthday-message').textContent = c.birthdayMessage;
   document.querySelectorAll('img').forEach(img => img.addEventListener('error', () => {
